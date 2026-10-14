@@ -1,0 +1,6 @@
+-keepattributes *Annotation*, Signature, InnerClasses, EnclosingMethod
+-keep,includedescriptorclasses class com.estilovivo.app.**$$serializer { *; }
+-keepclassmembers class com.estilovivo.app.** { *** Companion; }
+-keepclasseswithmembers class com.estilovivo.app.** { kotlinx.serialization.KSerializer serializer(...); }
+-dontwarn org.slf4j.**
+-dontwarn org.conscrypt.**
